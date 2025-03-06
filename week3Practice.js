@@ -72,4 +72,41 @@ var averageScore = mathScore + EnglishScore + GovernmentScore + physicsScore + c
 var averageScoreMessage = `Your average score for the 5 tests is ${averageScore}, keep pushing yourself!`
 console.log(averageScoreMessage);
 
+// ASSIGNMENT 6: Create an array of your 5 favorite foods.Display the first and last items in the array.
+
+
+// Creating an array of your 5 favorite foods.
+var favouriteMeals = ["Rice", "Beans", "Egusi Soup", "pounded yam", "Millet"];
+
+
+// logging out the first item on the list
+console.log(favouriteMeals[0]);
+
+
+// logging out the last item on the list
+console.log(favouriteMeals[4]);
+
+// adding two more items to the array
+
+favouriteMeals.unshift("Moi moi")
+favouriteMeals.push("Plantain")
+
+// displaying the updated array
+console.log(favouriteMeals);
+
+
+// ASSIGNMENT Create three arrays:
+
+// 8.jssOne
+// 9.jssTwo
+// 10.jssThree
+
+// Each array must contain 10 student names as string values.
+
+var jssOne = ["Obi", "Emeka", "Ada", "Nnanna", "Tim", "Desmond", "Kimwell", "Hugh", "Evelyn", "Charles"];
+var jssTwo = ["Ben", "Kate", "Timothy", "Kingsely", "Desmond", "Roseline", "Gabriel", "Raphael", "Uriel", "Chris"];
+var jssThree = ["Thomas", "Havard", "Mary", "Benjamin", "Solomon", "Water", "Ken", "Desmond", "Paul", "Peniel"];
+
+
+
 
