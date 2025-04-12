@@ -225,6 +225,14 @@ function checkEmploymentStatus(hoursWorked) {
 console.log(checkEmploymentStatus(45)); // Output: Full-time
 console.log(checkEmploymentStatus(30)); // Output: Part-time
 
+// QUESTION 10: Write an arrow function that takes two numbers and returns the larger one.
+//ANSWER
+
+const getLargerNumber = (num1, num2) => (num1 > num2 ? num1 : num2);
+
+// Example usage:
+console.log(getLargerNumber(10, 20)); // Output: 20
+console.log(getLargerNumber(30, 15)); // Output: 30
 
 
 
