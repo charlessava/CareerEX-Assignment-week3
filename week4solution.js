@@ -171,3 +171,60 @@ checkScores(studentScores);
 // Pass
 // Fail
 // Pass
+
+// QUESTION 6:Write an arrow function that returns "Yes" if a student passed both Math and English (score ≥ 50), else "No".
+// ANSWER
+
+const checkPass = (mathScore, englishScore) => (mathScore >= 50 && englishScore >= 50) ? "Yes" : "No";
+
+// Example usage:
+console.log(checkPass(60, 70)); // Output: Yes
+console.log(checkPass(40, 60)); // Output: No
+
+
+// QUESTION 7: Create a function that checks if a user has either an email or a phone number before signing up.
+// ANSWER
+function checkUserDetails(email, phoneNumber) {
+    if (email || phoneNumber) {
+        return "Signup successful";
+    } else {
+        return "Signup failed: Email or phone number is required";
+    }
+}
+
+// Example usage:
+console.log(checkUserDetails("user@example.com", "")); // Output: Signup successful
+console.log(checkUserDetails("", "123-456-7890"));     // Output: Signup successful
+console.log(checkUserDetails("", ""));                 // Output: Signup failed: Email or phone number is required
+
+// QUESTION 8: Write a function that takes username and password.If either one is empty, return "Invalid input" using the || operator.
+//ANSWER
+
+function validateLogin(username, password) {
+    if (!username || !password) {
+        return "Invalid input";
+    } else {
+        return "Login successful";
+    }
+}
+
+// Example usage:
+console.log(validateLogin("user123", "password123")); // Output: Login successful
+console.log(validateLogin("", "password123"));        // Output: Invalid input
+console.log(validateLogin("user123", ""));            // Output: Invalid input
+
+
+// QUSTION 9: Write a function that accepts hours worked. If hours ≥ 40, return "Full-time", else "Part-time" using a ternary operator.
+// ANSWER:
+
+function checkEmploymentStatus(hoursWorked) {
+    return hoursWorked >= 40 ? "Full-time" : "Part-time";
+}
+
+// Example usage:
+console.log(checkEmploymentStatus(45)); // Output: Full-time
+console.log(checkEmploymentStatus(30)); // Output: Part-time
+
+
+
+
